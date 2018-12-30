@@ -1,0 +1,32 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Page",
+  "author": "Francesco Brachini",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/fontawesome-svg-core": "^1.2.4",
+    "@fortawesome/free-brands-svg-icons": "^5.3.1",
+    "@fortawesome/free-regular-svg-icons": "^5.3.1",
+    "@fortawesome/free-solid-svg-icons": "^5.3.1",
+    "@fortawesome/vue-fontawesome": "^0.1.1",
+    "@nuxtjs/router": "^1.1.0",
+    "axios": "^0.18.0",
+    "nodemailer": "^4.6.8",
+    "nuxt": "^1.0.0",
+    "nuxt-fontawesome": "^0.3.0",
+    "validator": "^10.7.0",
+    "vue-cute-timeline": "^1.2.5",
+    "xss-filters": "^1.2.7"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.1"
+  }
+}

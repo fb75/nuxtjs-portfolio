@@ -1,0 +1,260 @@
+@keyframes sl1 {
+  0% {
+    transform: scale(0);
+  }
+  40% {
+    transform: translateX(-100%);
+  }
+  60% {
+    transform: scale(1);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes sl2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+@keyframes xscale1 {
+  0% { 
+    transform: translateY(-100%);
+    /*transform-origin: top;*/
+  }
+  20% {
+    transform: scaleY(0.1); 
+  }
+  45% {
+    transform: translateY(0);
+  }
+  80% {
+    /*transform: translateY(0);*/
+  }
+  100% { transform: scaleY(1); }
+}
+
+@keyframes xscale0 {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-5%); }
+  100% { transform: scaleX(0.5); }
+  /*100% { transform: scaleX(0); }*/
+}
+
+.main-enter {
+  /*transform: scale(0);*/
+  opacity: 0;  
+}
+.main-enter-to {
+  /*transform: scaleY(1);  */
+  animation: xscale1 1s ease-in-out forwards;
+  /*transform-origin: bottom;*/
+}
+.main-enter-active {
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+}
+.main-leave-to {
+  animation: xscale0 1s ease-in-out forwards;
+  /*transform: scaleY(0);*/
+  opacity: 0;
+}
+.main-leave-active {
+  transition: all 0.4s ease-in-out;
+}
+.main-move {
+  transition: all 0.4s ease-out;
+}
+
+.slideleft-enter {
+  transform: /*scaleX(0)*/ translateX(-100%);
+}
+.slideleft-enter-to {
+  transform: translateX(0);
+}
+.slideleft-enter-active {
+  transition: all .5s ease-in-out;
+}
+.slideleft-leave-to {
+  transform: scaleY(0);
+  transform-origin: top;
+  opacity: 0;
+}
+.slideleft-leave-active {
+  transition: all .5s ease-in-out;
+}
+.slideleft-move {
+  transition: all .5s ease-in-out;
+}
+
+
+.slideup-enter {
+  transform: translateY(-100%);
+  opacity: 0;  
+}
+.slideup-enter-to {
+  transform: translateY(0);
+}
+.slideup-enter-active {  
+  transition: all 1s ease-in-out;
+  /*position: absolute;*/
+}
+
+.slideup-leave-to {
+  transform: translateY(-100%);  
+  opacity: 0;
+}
+.slideup-leave-active {  
+  transition: all 1s ease-in-out;
+}
+.slideup-move {
+  /*transition: all 1s ease-in-out;*/
+}
+
+.slideright-enter {
+  transform: translateX(-100%);
+  opacity: 0;  
+}
+.slideright-enter-to {
+  transform: translateX(0);
+}
+.slideright-enter-active {  
+  transition: all 1s ease-in-out;
+}
+
+.slideright-leave-to {
+  transform: translateX(-100%);  
+  position: absolute;
+  opacity: 0;
+}
+.slideright-leave-active {  
+  transition: all 1s ease-in-out;
+}
+.slideright-move {
+  transition: all 1s ease-in-out;
+}
+
+
+
+.slide-enter {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+.slide-enter-to {
+  transition: all 1s ease-in-out;   
+}
+.slide-enter-active {
+  transform: translateY(0);
+  /*animation: backslide 1s ease-in-out forwards;*/
+}
+.slide-leave-active {
+  transition: all 1s ease-in-out;
+  animation: backslide2 1s ease-in-out forwards;  
+}
+.slide-leave-to {
+  opacity: 0;  
+  transform: translateY(-100%);
+}
+.slide-move {
+  transition: all 1s ease-in-out;
+}
+
+.slide2-enter {
+  opacity: 0;
+}
+.slide2-enter-to {
+  animation: backslide 2s ease-in-out forwards;
+}
+.slide2-enter-active {
+  transition: all 1s ease-in-out;   
+}
+.slide2-leave-active {
+  transition: all 0.5s ease-in-out;
+  opacity: 0;  
+}
+.slide2-leave-to {
+  animation: backslide2 2s ease-in-out forwards;  
+}
+.slide2-move {
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* Button Animations*/
+ 
+@keyframes move {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes move2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%) scale(2); 
+    background: red;
+  }
+  100% {
+    transform: translateX(10%);
+  }
+}
+@keyframes move3 {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-200%) translateX(50%);
+  }
+  50% {
+    transform: translateY(0) translateX(0);
+  }
+  75% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateY(100%) translateX(0);
+  }
+}   
+
+/* Sidebar animation on page change */
+@keyframes backslide {
+
+  0% {
+    background-size: 0;
+  }
+
+  50% {
+    
+  }
+
+  100% {
+    background-size: 20%;
+  }
+}
+
+@keyframes backslide2 {
+  0% {
+    background-size: 20%;    
+  }
+  
+  50% {
+    
+  }
+
+  100% {
+    background-size: 0;
+  }
+}
+
