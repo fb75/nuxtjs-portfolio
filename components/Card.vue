@@ -13,10 +13,10 @@
 			<h1> Francesco <strong>Brachini</strong></h1>
 		  <p>Frontend Developer</p>
   		<div class="social">
-				<a href="www.google.com"><fa :icon="faLinkedin" style="padding: 1em" /></a>
-				<fa :icon="faGithub" style="padding: 1em" />
-				<fa :icon="faInstagram" style="padding: 1em" />
-				<fa :icon="faFacebookF" style="padding: 1em" />
+				<a href="https://www.linkedin.com/in/francesco-brachini-98482a145/"><fa :icon="faLinkedin" style="padding: 1em" /></a>
+				<a href="https://github.com/fb75"><fa id="github" :icon="faGithub" style="padding: 1em" /></a>
+				<a href="https://www.instagram.com/francbrk/"><fa id="instagram" :icon="faInstagram" style="padding: 1em" /></a>
+				<a href="https://www.facebook.com/francesco.brachini1"><fa id="facebook" :icon="faFacebookF" style="padding: 1em" /></a>
 			</div>
 		</figcaption>
 	</div>
@@ -99,6 +99,11 @@ p {
   text-align: center;
 }
 
+a {
+	color: #00a8e8;
+	transition: all .5s ease-in-out;
+}
+
 figure {
 	grid-area: photo;	
   /*background-color: yellow;  */
@@ -115,6 +120,7 @@ figcaption {
 
 
 @media only screen and (min-width: 768px) {
+
 	.contcard {
 		position: absolute;
 		top: 0;
@@ -130,19 +136,32 @@ figcaption {
 		border-radius: 0;
 		background: #003459;
 	}
+
 	.avatar {
 		width: 130px;
 		height: 130px;
 		/*margin: -1em auto;		*/
 	}
+
 	figcaption {
 		width: 100%;
 		margin-top: -6em;		
 	}
+
 	h1 {
 		font-size: 30px;
 		margin-bottom: 1.5em;		
 	}
+
+	a {
+		color: #00a8e8;
+		transition: all .5s ease-in-out;
+	}
+	
+	a:hover { 
+		transform: translateY(-10%) scale(1.5);
+	}
+
 	p {
 		font-size: 18px;
 		text-transform: uppercase;

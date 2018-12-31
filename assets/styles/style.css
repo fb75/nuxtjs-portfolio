@@ -14,9 +14,6 @@
   display: none;
 }
 
-
-
-
 *,
 html {
   margin: 0;
@@ -49,7 +46,6 @@ html {
   width: 100%;
   height: 100%;
   background: url('~static/images/bg3.svg') no-repeat;
-  /*background-attachment: fixed;*/
   background-position: top right;
   background-size: 300%;  
 }
@@ -182,7 +178,6 @@ h3 {
   margin: 0;
   padding: 0;
   filter: drop-shadow(5px 5px 10px rgba(0, 52, 89, 1));
-  /*animation: mobsl1 10s forwards ease infinite;*/
 }
 
 .text2 {
@@ -235,13 +230,6 @@ h3 {
     width: auto;
     height: 100vh;
     filter: drop-shadow(5px 5px 10px rgba(0, 52, 89, 1));
-    /*background: 
-      url("~static/images/element.svg"),
-      url("~static/images/webdes2.svg"),
-      url("~static/images/webdev2.svg");
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: bottom right, 10% 19%, right 25%;  
-    background-size: 200%, 100%, 80%;*/
     z-index: 1;
     transition: background 1s ease-in-out; 
   }
@@ -264,10 +252,6 @@ h3 {
     width: auto;
     height: 100vh;
     filter: drop-shadow(5px 5px 10px rgba(0, 52, 89, 1));
-/*    background: url("~static/images/element.svg"), url("~static/images/mouse.svg");
-    background-size: 100%, 30%;
-    background-position: bottom left, center;
-    background-repeat: no-repeat, no-repeat;*/
     z-index: 1;
     transition: all 1s ease-in-out; 
   }

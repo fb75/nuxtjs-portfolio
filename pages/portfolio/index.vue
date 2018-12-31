@@ -134,7 +134,6 @@ a {
 	.works {
 		width: 280px;
 		padding: 2em;
-		/*height: 110px;*/
 		grid-template-columns: 42% 10% 41%;
 		grid-template-rows: auto;
 		justify-self: start;
@@ -145,20 +144,14 @@ a {
 		background: #003459;
 		color: #fff;
 	}
+
 	.image {
 		width: 70px;
 		height: 70px;
-		/*background: black;
-		width: 110px;
-		height: 70px;
-		margin-top: 1em;
-		justify-self: center;*/
-		
 	}
 
 	h4 {
 		justify-self: center;
-		/*font-size: 13px;*/
 	}
 
 	a {

@@ -296,8 +296,6 @@ span {
   }
 
   .description {
-    /*width: 60%;
-    height: 60%;*/
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -342,16 +340,6 @@ span {
     margin: 0;
   }
 
-  /*  .inforight {
-    width: 50%;
-    display: flex;
-    flex-flow: column;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-    padding: 2em 0;
-    margin: 0;
-  }
-*/
   .verticalized {
     display: flex;
     flex-flow: row;
@@ -365,6 +353,7 @@ span {
     font-size: 0.9em;
     transition: all .5s;
   }
+
   .verticalized span {
     position: absolute;
     top: 11%;
