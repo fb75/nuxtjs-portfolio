@@ -23,7 +23,7 @@ const sendMail = (name, email, msg) => {
     service: "gmail",
     auth: {
       user: "gunner19751@gmail.com",
-      pass: "franci061075"
+      pass: "*********************"
     }
   });
   transporter.sendMail({
