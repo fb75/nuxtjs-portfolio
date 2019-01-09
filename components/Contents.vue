@@ -52,7 +52,6 @@ export default {
   },
   methods: {
     welcome() {
-      // this.activeText = this.text[0];
       let n = 0;
       setInterval(() => {
         n++;

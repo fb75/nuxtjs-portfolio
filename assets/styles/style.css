@@ -52,8 +52,8 @@ html {
 
 .co {
   background: url('~static/images/mail.svg') no-repeat;
-  background-size: cover;
-  background-position: bottom right;
+  background-size: 50%;
+  background-position: 130% 70%;
 }
 
 .po {

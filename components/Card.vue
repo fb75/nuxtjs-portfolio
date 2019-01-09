@@ -73,7 +73,7 @@ export default {
   align-items: center; 
   grid-template-areas: 
   	"photo social";
-  z-index: 11;
+  z-index: 300;
 }
 
 .contcard-up {

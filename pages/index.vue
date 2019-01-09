@@ -154,6 +154,7 @@ export default {
   justify-content: center;
   align-items: center;
   align-content: center;
+  margin: 5em auto;
 }
 
 .icons {
@@ -227,7 +228,7 @@ li {
   align-items: center;
   align-content: center;
   justify-content: center;
-  margin: 12em 1em 2em;
+  margin: 15em 1em 2em;
   padding: 2em;
   text-transform: none;
   background: #003459;
